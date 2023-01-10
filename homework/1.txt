@@ -1,0 +1,72 @@
+What are the layers in OSI Reference Model? (20 points)
+
+The OSI (Open Systems Interconnection) Reference Model is a framework for understanding how communication occurs between two systems. It divides the process of communication into seven distinct layers, each of which has a specific function to perform. The layers are:
+
+Physical Layer: This layer deals with the physical connection between devices, including the transmission of bits over a communication channel.
+Data Link Layer: This layer is responsible for establishing, maintaining, and terminating connections between devices. It also handles error detection and correction.
+Network Layer: This layer is responsible for routing packets of data from one device to another. It determines the best path for the data to take based on the destination address.
+Transport Layer: This layer is responsible for ensuring that data is delivered reliably from one device to another. It provides flow control, error recovery, and congestion control.
+Session Layer: This layer establishes, maintains, and terminates connections between applications. It also provides synchronization and management of data exchange.
+Presentation Layer: This layer is responsible for translating data into a format that can be understood by the application layer. It also handles data compression and encryption.
+Application Layer: This is the top layer of the OSI model and is responsible for providing services to the user. It includes things like email, file transfer, and web browsing.
+
+List advantages and disadvantages of layer approach? (20 points)
+There are several advantages to the layer approach used in the OSI Reference Model:
+
+Modularity: Each layer performs a specific function, which makes it easier to design, test, and maintain complex communication systems.
+Interoperability: Because different vendors can design products that adhere to the OSI model's standardized layers, it is possible to mix and match different products and have them work together.
+Extensibility: New protocols and technologies can be added at a particular layer without affecting the other layers.
+Ease of troubleshooting: Because each layer is independent, it is easier to identify and fix problems that occur at a specific layer.
+However, there are also some disadvantages to the layer approach:
+
+Complexity: The layer approach can add complexity to the design and implementation of communication systems.
+Performance overhead: The process of dividing a communication into multiple layers and processing it at each layer can add overhead and reduce the overall performance of the system.
+Limited flexibility: Because each layer has a specific function to perform, it can be inflexible when it comes to adapting to new or unusual communication scenarios.
+
+What are the functionalities of transport layer in OSI model? Explain briefly each (20 points)
+The transport layer in the OSI model is responsible for providing end-to-end communication between devices. It performs several functions, including:
+
+Flow control: The transport layer ensures that the sender does not transmit data too quickly, which could overwhelm the receiver.
+Error recovery: If an error occurs during transmission, the transport layer can request that the data be retransmitted to ensure that it is delivered correctly.
+Segmentation and reassembly: The transport layer can divide large amounts of data into smaller chunks, called segments, which are easier to transmit. It can then reassemble the segments back into the original data at the destination.
+Congestion control: If too much data is trying to be transmitted at once, the transport layer can implement mechanisms to reduce the flow of data and prevent congestion.
+Multiplexing: The transport layer can multiplex multiple logical connections over a single physical connection, allowing multiple applications to share the same communication link.
+End-to-end communication: The transport layer is responsible for providing a reliable end-to-end communication channel between two devices, even if the data has to pass through multiple intermediate networks.
+
+How long does it take to send a file of 512 bytes from host A to host B over a circuit-switched network? (20 points)
+
+All links are 15 Mbps
+
+Each link uses TDM with 50 slots/sec
+
+800 ms to establish end-to-end circuit
+
+10 links are between host A and hast B.
+
+To calculate the time it would take to send a file of 512 bytes from host A to host B over a circuit-switched network, we can use the following formula:
+
+Time = (512 bytes / 15 Mbps) + (800 ms / 10 links)
+
+Plugging in the values given, we get:
+
+Time = (512 bytes / 15,000,000 bits/sec) + (800 ms / 10 links)
+
+Time = 0.000034 seconds + 0.08 seconds
+
+Time = 0.080034 seconds
+
+This means it would take approximately 0.08 seconds to send a file of 512 bytes from host A to host B over a circuit-switched network, assuming all other conditions remain constant.
+
+How long does it take to send a file of 15 Kbytes from host A to host B over a packet-switching network? Each link has a bit rate of 15 Mbps (20 points). Consider only the transmission delay.
+
+To calculate the transmission delay for sending a file of 15 Kbytes from host A to host B over a packet-switching network, we can use the following formula:
+
+Transmission Delay = (File Size / Link Speed)
+
+Plugging in the values given, we get:
+
+Transmission Delay = (15,000 bytes / 15,000,000 bits/sec)
+
+Transmission Delay = 0.1 seconds
+
+This means it would take approximately 0.1 seconds to transmit a file of 15 Kbytes over a link with a speed of 15 Mbps. Note that this calculation only considers the transmission delay and does not take into account other factors that could affect the time it takes to send the file, such as routing delays or congestion on the network.
