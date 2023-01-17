@@ -1,0 +1,27 @@
+Chapter One: Computer Networks and the Internet
+
+Computer Networks
+
+Problem: Connecting end systems to exchange information. 
+Solution: Connect each pair of end systems by a poiint to point link. 
+
+Two devices in network:
+1. End Systems 
+	- 
+2. Nodes
+	- Connected to at least one node
+	- Network Nodes Don't generate information
+
+Big questions: 
+Qhat is the Internet 
+What is a protocal
+Network edge: What are host, access network and physical media
+Network core: What are packts, circuit switching
+Performance loss 
+Security 
+Protocal Layers
+Service Models
+History
+
+A protocal is a way to query information for a client. 
+
